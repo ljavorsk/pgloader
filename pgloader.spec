@@ -12,7 +12,7 @@ Source0:        https://github.com/dimitri/%{name}/releases/download/v%{version}
 # then only bz number commented here
 ExclusiveArch: %{arm} %{ix86} x86_64 ppc sparcv9 aarch64
 
-BuildRequires:  make sbcl
+BuildRequires:  make clisp
 BuildRequires:  freetds-devel
 BuildRequires:  openssl-devel
 Requires:       openssl-devel
@@ -23,7 +23,7 @@ from current database to PostreSQL.
 
 It uses the COPY PostreSQL protocol to stream the data into the server
 
-pgloader can read data from CSV and DBF files, or SQLite, MySQL,
+Pgloader can read data from CSV and DBF files, or SQLite, MySQL,
 MS SQL Server, PostgreSQL, Redshift databases.
 
 %package devel
@@ -36,7 +36,6 @@ Devel package used to building some package against pgloader
 
 %prep
 %setup -q -n %{name}-bundle-%{version}
-
 
 %build
 %{set_build_flags}
