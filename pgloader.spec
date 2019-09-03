@@ -1,3 +1,7 @@
+# Disabling the debug package generation
+# Build error if not disabled
+%define debug_package %{nil}
+
 Name:           pgloader
 Version:        3.6.1
 Release:        1%{?dist}
@@ -39,7 +43,6 @@ Devel package used to building some package against pgloader
 
 %build
 %{set_build_flags}
-%define debug_package %{nil}
 %{make_build} save
 
 
