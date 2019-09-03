@@ -1,6 +1,6 @@
 # Disabling the debug package generation
 # Build error if not disabled
-%define debug_package %{nil}
+%global debug_package %{nil}
 
 Name:           pgloader
 Version:        3.6.1
