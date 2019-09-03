@@ -21,7 +21,7 @@ Requires:       openssl-devel
 Data loading tool that allows to implement continuous migration
 from current database to PostreSQL.
 
-It uses the COPY PostreSQL protocol to stream the data into the server
+It uses the COPY PostreSQL protocol to stream the data into the server.
 
 Pgloader can read data from CSV and DBF files, or SQLite, MySQL,
 MS SQL Server, PostgreSQL, Redshift databases.
