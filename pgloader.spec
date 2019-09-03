@@ -7,6 +7,11 @@ License:        PostgreSQL
 URL:            https://pgloader.io/
 Source0:        https://github.com/dimitri/%{name}/releases/download/v%{version}/%{name}-bundle-%{version}.tgz
 
+# sbcl package is not supported on other architectures
+# Bug in BZ needs to be added after review for every non-supported arch
+# then only bz number commented here
+ExclusiveArch: %{arm} %{ix86} x86_64 ppc sparcv9 aarch64
+
 BuildRequires:  make sbcl
 BuildRequires:  freetds-devel
 BuildRequires:  openssl-devel
