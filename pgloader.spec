@@ -40,7 +40,7 @@ Devel package used to building some package against pgloader
 %build
 %{set_build_flags}
 %define debug_package %{nil}
-make save
+%{make_build} save
 
 
 %install
