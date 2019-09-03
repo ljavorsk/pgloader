@@ -12,7 +12,7 @@ Source0:        https://github.com/dimitri/%{name}/releases/download/v%{version}
 # then only bz number commented here
 ExclusiveArch: %{arm} %{ix86} x86_64 ppc sparcv9 aarch64
 
-BuildRequires:  make clisp
+BuildRequires:  make sbcl
 BuildRequires:  freetds-devel
 BuildRequires:  openssl-devel
 Requires:       openssl-devel
